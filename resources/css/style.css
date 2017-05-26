@@ -48,8 +48,6 @@ header span {
   background-color: black;
   color: white;
   padding: 2rem 3rem;
-  position: relative;
-  display: block;
 }
 h1 {
   font-size: 2rem;
@@ -80,41 +78,60 @@ nav a {
   text-decoration: none;
   margin-top: .75rem;
   margin-bottom: .75rem;
+
+}
+nav a:hover {
+  color: firebrick;
+  background-color: white;
+  border: 1px solid black;
+  padding: 1px;
+
 }
 
 /*Merchandise and Location/Hours */
 
-.merchandise {
+.merchbox {
   width: 960px;
   margin: 0 auto;
   background-color: white;
   padding-top: 3rem;
-
-
+  padding-bottom: 4rem;
+}
+.merchandise {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
 }
 .products {
 
-
-}
-.products img {
-  border: 4px solid black;
   width: 30%;
-  height: 9rem;
-  padding: 2rem;
-
+}
+.merchpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid black;
+  height: 13rem;
+}
+.merchpic img {
+  max-height: 9rem;
+  max-width: auto;
+  padding: 2rem 0rem;
+  overflow: hidden;
+}
+#glasses img {
+  width: 144px;
+  height: auto;
 }
 .products span {
-  display: block;
   background-color: black;
   color: white;
+  display: block;
+  padding: 0.5rem 0rem 0.5rem 0rem;
   text-align: center;
-  padding: .5rem 0rem .5rem 0rem;
+}
 
-}
-.products span #detail {
-  color: black;
-  background-color: white;
-}
+
 
 /* Footer/Copyright */
 
