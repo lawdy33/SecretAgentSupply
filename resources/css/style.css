@@ -1,9 +1,11 @@
 html {
   font-size: 18px;
   background-color: black;
-  font-family: Helvetica;
-
+  font-family: Helvetica, sans-serif;
 }
+
+/* HEADER */
+
 header {
   background-color: black;
   width: 960px;
@@ -26,6 +28,9 @@ header span {
   padding-top: .66rem;
   padding-bottom: .66rem;
 }
+
+/* Motorcyle Image - New Arrival */
+
 #motorcycle {
   background-image: url("../images/moto.jpeg");
   background-position: center;
@@ -38,11 +43,13 @@ header span {
 }
 #arrival-box {
   margin-top: 9rem;
-  margin-bottom: 5rem;
-  width: 24rem;
+  margin-bottom: auto;
+  width: 20rem;
   background-color: black;
   color: white;
-
+  padding: 2rem 3rem;
+  position: relative;
+  display: block;
 }
 h1 {
   font-size: 2rem;
@@ -53,11 +60,13 @@ h4 {
 }
 h1, h4 {
   font-weight: bold;
-  padding: 2rem 3rem;
 }
 #arrival-box img {
   display: none;
 }
+
+/* Navigation section */
+
 nav {
   display: flex;
   width: 960px;
@@ -72,14 +81,19 @@ nav a {
   margin-top: .75rem;
   margin-bottom: .75rem;
 }
+
+/*Merchandise and Location/Hours */
+
 .merchandise {
   width: 960px;
   margin: 0 auto;
   background-color: white;
   padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+
+}
+.products {
+
 
 }
 .products img {
@@ -97,6 +111,13 @@ nav a {
   padding: .5rem 0rem .5rem 0rem;
 
 }
+.products span #detail {
+  color: black;
+  background-color: white;
+}
+
+/* Footer/Copyright */
+
 footer {
   margin: 0 auto;
   height: 5rem;
