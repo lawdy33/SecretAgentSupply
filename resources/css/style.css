@@ -94,16 +94,13 @@ nav a:hover {
   width: 960px;
   margin: 0 auto;
   background-color: white;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
 }
 .merchandise {
-  margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
+  padding: 3rem 0;
 }
 .products {
-
   width: 30%;
 }
 .merchpic {
@@ -127,13 +124,35 @@ nav a:hover {
   background-color: black;
   color: white;
   display: block;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.5rem 0rem;
   text-align: center;
 }
+.business {
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 1rem 0rem 1rem 2rem;
+  margin-bottom: 0.25rem;
+}
+.details {
+  width: 35%;
+}
+.details a {
+  color: black;
+  text-decoration: none;
+}
+.details a:hover {
+  color: white;
+  background-color: firebrick;
+  text-decoration: underline;
+}
 
-
-
-/* Footer/Copyright */
+/* Footer-Copyright */
 
 footer {
   margin: 0 auto;
