@@ -65,7 +65,7 @@ h1, h4 {
 
 /* Navigation section */
 
-nav {
+.desktop {
   display: flex;
   width: 960px;
   background-color: firebrick;
@@ -73,19 +73,21 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-nav a {
+.desktop a {
   color: white;
   text-decoration: none;
   margin-top: .75rem;
   margin-bottom: .75rem;
-
+  display: block;
 }
-nav a:hover {
+.desktop a:hover {
   color: firebrick;
   background-color: white;
   border: 1px solid black;
   padding: 1px;
-
+}
+.mobile {
+  display: none;
 }
 
 /*Merchandise and Location/Hours */
@@ -164,3 +166,128 @@ footer {
   display: flex;
   align-items: center;
 }
+
+/* Media Queries */
+
+/* Tablet */
+
+@media only screen and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    width: 960px;
+    background-color: firebrick;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile a {
+    color: white;
+    text-decoration: none;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    display: block;
+  }
+  .mobile a:hover {
+    color: firebrick;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1px;
+  }
+  #glasses-mobile {
+    display: none;
+  }
+  .products {
+    width: 47%;
+  }
+ }
+
+/* Mobile less than 470px */
+
+ @media only screen and (max-width: 470px) {
+   #motorcycle {
+     height: 15rem;
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+   }
+   #arrival-box {
+     margin-top: 10rem;
+     margin-bottom: auto;
+     width: 100%;
+     background-color: black;
+     color: white;
+     padding: 1rem 2rem;
+   }
+   h1 {
+     font-size: 1rem;
+   }
+   h4 {
+     margin-bottom: 0.25rem;
+     font-size: 0.77rem;
+   }
+   .desktop {
+     display: none;
+   }
+   .mobile {
+     display: flex;
+     width: 100%;
+     background-color: firebrick;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+   }
+   .mobile a {
+     color: white;
+     text-decoration: none;
+     margin-top: .75rem;
+     margin-bottom: .75rem;
+     display: block;
+   }
+   .mobile a:hover {
+     color: firebrick;
+     background-color: white;
+     border: 1px solid black;
+     padding: 1px;
+   }
+   .merchbox {
+     width: 100%;
+   }
+   .merchandise {
+     display: flex;
+     justify-content: center;
+   }
+   #glasses-mobile {
+     display: none;
+   }
+   #watch {
+     display: none;
+   }
+   .products {
+     width: 90%;
+   }
+   .business {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .details {
+     width: 90%;
+   }
+   #locmobile {
+     margin-bottom: 0.5rem;
+   }
+   footer {
+     margin: 0 auto;
+     height: 5rem;
+     width: 100%;
+     background-color: black;
+     color: white;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+ }
