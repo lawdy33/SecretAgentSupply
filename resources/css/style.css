@@ -172,6 +172,10 @@ footer {
 /* Tablet */
 
 @media only screen and (max-width: 1024px) {
+
+  body {
+    width: 100%;
+  }
   .desktop {
     display: none;
   }
@@ -207,6 +211,10 @@ footer {
 /* Mobile less than 470px */
 
  @media only screen and (max-width: 470px) {
+
+   body {
+     width: 100%;
+   }
    #motorcycle {
      height: 15rem;
      width: 100%;
