@@ -212,11 +212,9 @@ footer {
 
  @media only screen and (max-width: 470px) {
 
-   html {
-     width: auto;
-   }
-   header {
-     width: auto;
+
+   header, #motorcycle, nav, .merchbox, footer {
+     width: 100%;
    }
    #motorcycle {
      height: 15rem;
