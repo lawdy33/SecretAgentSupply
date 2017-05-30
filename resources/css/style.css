@@ -173,7 +173,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
 
-  body {
+  html {
     width: 100%;
   }
   .desktop {
@@ -212,7 +212,7 @@ footer {
 
  @media only screen and (max-width: 470px) {
 
-   body {
+   html {
      width: 100%;
    }
    #motorcycle {
